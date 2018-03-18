@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rxjava">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Rx1DeferActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".Rx2ObervableFromCallableActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".Rx3SingleFromCallableActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".Rx4PublishSubjectActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".Rx5SingleJustMapActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".Rx6DebounceMapActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".Rx7ZipActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".Rx8FlapmapActivity"
+            android:parentActivityName=".MainActivity"/>
+
+    </application>
+
+</manifest>
